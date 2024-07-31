@@ -4,6 +4,7 @@
     class="sheet mx-auto my-8 d-flex"
     elevation="16"
     show-arrows="hover"
+    :style="{ height: height - height / 4 + 'px' }"
   >
     <v-window-item class="card">
       <ScreenshotCard
@@ -30,7 +31,7 @@
 
 <script setup>
 import { useDisplay } from "vuetify";
-const { width, mobile } = useDisplay();
+const { width, height, mobile } = useDisplay();
 
 import addNew from "../public/add-new.png";
 import tipperLookup from "../public/tipper-lookup.png";
