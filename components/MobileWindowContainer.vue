@@ -1,7 +1,6 @@
 <template>
   <v-window
-    :height="800"
-    :width="800"
+    :width="width"
     class="sheet mx-auto my-8 d-flex"
     elevation="16"
     show-arrows="hover"
