@@ -1,6 +1,6 @@
 <template>
   <v-window
-    :width="width"
+    :width="width - width / 10"
     class="sheet mx-auto my-8 d-flex"
     elevation="16"
     show-arrows="hover"
