@@ -8,6 +8,6 @@
 
 <script setup>
 const goToDownloadPage = () => {
-  window.location.href = "https://fastupload.io/7376a10b8aebf0eb";
+  window.location.href = "https://fastupload.io/6c46a6a50b52bd1f";
 };
 </script>
