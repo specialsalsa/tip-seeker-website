@@ -1,5 +1,10 @@
 <template>
-  <v-sheet height="800" width="1800" class="sheet mx-auto my-8" elevation="16">
+  <v-sheet
+    height="800"
+    :width="width - width / 5"
+    class="sheet mx-auto my-8"
+    elevation="16"
+  >
     <ScreenshotCard
       title="Check addresses for tip data"
       :img="tipperLookup"
