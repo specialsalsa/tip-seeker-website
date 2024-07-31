@@ -3,7 +3,7 @@
     class="mx-auto my-8 title-card"
     :elevation="elevation"
     max-height="700"
-    width="400"
+    :width="width - width / 10"
     height="700"
     @mouseover="addElevation()"
     @mouseleave="elevation = 0"
@@ -16,12 +16,16 @@
 </template>
 
 <script setup>
+import { useDisplay } from "vuetify";
+
 const props = defineProps({
   title: String,
   img: String,
 });
 
 const elevation = ref(0);
+
+const { width } = useDisplay();
 
 function addElevation() {
   elevation.value = 16;
