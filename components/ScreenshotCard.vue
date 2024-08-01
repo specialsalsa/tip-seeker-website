@@ -3,7 +3,7 @@
     class="mx-auto my-8 title-card"
     :elevation="elevation"
     max-height="700"
-    width="400"
+    :width="width - width / 10"
     height="700"
     @mouseover="addElevation()"
     @mouseleave="elevation = 0"
