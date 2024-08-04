@@ -3,7 +3,7 @@
     class="mx-auto my-8 title-card"
     :elevation="elevation"
     max-height="700"
-    :width="width - width / 10"
+    :width="mobile ? width - width / 10 : width / 5"
     height="700"
     @mouseover="addElevation()"
     @mouseleave="elevation = 0"
@@ -25,7 +25,7 @@ const props = defineProps({
 
 const elevation = ref(0);
 
-const { width } = useDisplay();
+const { width, mobile } = useDisplay();
 
 function addElevation() {
   elevation.value = 16;
