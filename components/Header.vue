@@ -4,7 +4,7 @@
     :elevation="elevation"
     max-width="1500"
     max-height="800"
-    :width="width < 1024 ? width - 20 : 1600"
+    :width="width - 20"
     @mouseover="addElevation()"
     @mouseleave="elevation = 0"
   >
@@ -21,8 +21,6 @@ import { useDisplay } from "vuetify";
 
 const elevation = ref(0);
 const { width, mobile } = useDisplay();
-
-const headerCardWidth = computed(() => width - 20);
 
 function addElevation() {
   elevation.value = 16;

@@ -23,8 +23,6 @@
 import { useDisplay } from "vuetify";
 const { width, mobile } = useDisplay();
 
-const isMobile = computed(() => width < 1024);
-
 import addNew from "../public/add-new.png";
 import tipperLookup from "../public/tipper-lookup.png";
 import tipLog from "../public/tip-log.png";
