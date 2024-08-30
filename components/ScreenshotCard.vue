@@ -34,6 +34,9 @@ function addElevation() {
 
 <style scoped>
 .title-card {
+  /* position: fixed; */
+  height: 60vh;
+
   background-color: #000000;
   border-radius: 20px;
   max-height: 60vh;

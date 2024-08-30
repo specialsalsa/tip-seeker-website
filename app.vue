@@ -2,6 +2,8 @@
 import { useDisplay } from "vuetify";
 
 const { mobile } = useDisplay();
+
+await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
 </script>
 
 <template>

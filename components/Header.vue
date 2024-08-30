@@ -31,7 +31,7 @@ function addElevation() {
 .title {
   display: flex;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
   transition: color 0.5s;
 }
 
