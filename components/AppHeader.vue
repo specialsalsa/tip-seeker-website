@@ -20,7 +20,7 @@
 import { useDisplay } from "vuetify";
 
 const elevation = ref(0);
-const { width, mobile } = useDisplay();
+const { width } = useDisplay();
 
 function addElevation() {
   elevation.value = 16;

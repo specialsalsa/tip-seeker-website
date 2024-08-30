@@ -4,27 +4,20 @@
     class="sheet mx-auto my-8"
     elevation="16"
   >
-    <ScreenshotCard
-      title="Check addresses for tip data"
-      :img="tipperLookup"
-    ></ScreenshotCard>
-    <v-divider vertical inset></v-divider>
-    <ScreenshotCard title="Record tips & notes" :img="addNew"></ScreenshotCard>
-    <v-divider vertical inset></v-divider>
-    <ScreenshotCard
-      title="View recently logged trips"
-      :img="tipLog"
-    ></ScreenshotCard>
+    <ScreenshotCard title="Check addresses for tip data" :img="tipperLookup" />
+    <v-divider vertical inset />
+    <ScreenshotCard title="Record tips & notes" :img="addNew" />
+    <v-divider vertical inset />
+    <ScreenshotCard title="View recently logged trips" :img="tipLog" />
   </v-sheet>
 </template>
 
 <script setup>
-import { useDisplay } from "vuetify";
-const { width, mobile } = useDisplay();
-
 import addNew from "../public/add-new.png";
 import tipperLookup from "../public/tipper-lookup.png";
 import tipLog from "../public/tip-log.png";
+import { useDisplay } from "vuetify";
+const { width } = useDisplay();
 </script>
 
 <style scoped>

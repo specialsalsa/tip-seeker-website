@@ -2,13 +2,13 @@
   <v-card
     class="title-card"
     :elevation="elevation"
+    :min-width="mobile ? width - width / 5 : '400'"
     @mouseover="addElevation()"
     @mouseleave="mobile ? null : (elevation = 0)"
-    :min-width="mobile ? width - width / 5 : '400'"
   >
     <v-card-item class="card-item">
       <v-card-title class="title">{{ title }}</v-card-title>
-      <v-img :src="img"></v-img>
+      <v-img :src="img" />
     </v-card-item>
   </v-card>
 </template>
@@ -16,16 +16,20 @@
 <script setup>
 import { useDisplay } from "vuetify";
 
-const props = defineProps({
-  title: String,
-  img: String,
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  img: {
+    type: String,
+    required: true,
+  },
 });
 
 const elevation = ref(24);
 
-const { width, height, mobile } = useDisplay();
-
-const color = ref("red");
+const { width, mobile } = useDisplay();
 
 function addElevation() {
   elevation.value = 24;
