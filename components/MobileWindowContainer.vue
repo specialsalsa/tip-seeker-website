@@ -1,9 +1,5 @@
 <template>
-  <v-window
-    class="sheet mx-auto my-8 d-flex"
-    elevation="16"
-    show-arrows="hover"
-  >
+  <v-window class="sheet mx-auto my-8 d-flex" elevation="16" show-arrows="true">
     <v-window-item class="card">
       <ScreenshotCard
         title="Check addresses for tip data"
@@ -40,10 +36,10 @@ const isMobile = computed(() => width < 1024);
 
 <style scoped>
 .sheet {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  min-height: 60vh;
+  min-height: 70vh; */
 }
 </style>

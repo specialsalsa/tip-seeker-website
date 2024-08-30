@@ -36,14 +36,18 @@ function addElevation() {
 .title-card {
   background-color: #000000;
   border-radius: 20px;
-  max-height: 66vh;
+  max-height: 60vh;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .title {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1rem;
   justify-content: center;
+}
+
+.img {
+  height: auto;
 }
 </style>
