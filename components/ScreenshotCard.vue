@@ -3,7 +3,7 @@
     class="title-card"
     :elevation="elevation"
     @mouseover="addElevation()"
-    @mouseleave="elevation = 0"
+    @mouseleave="mobile ? null : (elevation = 0)"
     :min-width="mobile ? width - width / 5 : '400'"
   >
     <v-card-item class="card-item">
@@ -21,14 +21,14 @@ const props = defineProps({
   img: String,
 });
 
-const elevation = ref(0);
+const elevation = ref(24);
 
 const { width, height, mobile } = useDisplay();
 
 const color = ref("red");
 
 function addElevation() {
-  elevation.value = 16;
+  elevation.value = 24;
 }
 </script>
 
