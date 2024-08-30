@@ -18,6 +18,5 @@ const { mobile } = useDisplay();
 <style scoped>
 .app {
   display: flex;
-  justify-content: center;
 }
 </style>

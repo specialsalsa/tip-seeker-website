@@ -1,7 +1,6 @@
 <template>
   <v-sheet
-    height="800"
-    :width="width - width / 5"
+    :width="width - width / 10"
     class="sheet mx-auto my-8"
     elevation="16"
   >
@@ -31,10 +30,8 @@ import tipLog from "../public/tip-log.png";
 <style scoped>
 .sheet {
   display: flex;
-}
-
-.card {
-  margin-left: 15px;
-  margin-right: 15px;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 </style>

@@ -3,7 +3,6 @@
     class="sheet mx-auto my-8 d-flex"
     elevation="16"
     show-arrows="hover"
-    :style="{ height: height - height / 4 + 'px' }"
   >
     <v-window-item class="card">
       <ScreenshotCard
@@ -39,4 +38,12 @@ import tipLog from "../public/tip-log.png";
 const isMobile = computed(() => width < 1024);
 </script>
 
-<style scoped></style>
+<style scoped>
+.sheet {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 60vh;
+}
+</style>

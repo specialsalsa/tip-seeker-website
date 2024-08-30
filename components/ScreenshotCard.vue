@@ -1,15 +1,12 @@
 <template>
   <v-card
-    class="mx-auto my-8 title-card"
+    class="title-card"
     :elevation="elevation"
-    max-height="700"
-    max-width="400"
-    :width="mobile ? width - width / 10 : width / 5"
-    height="700"
     @mouseover="addElevation()"
     @mouseleave="elevation = 0"
+    :min-width="mobile ? width - width / 5 : '400'"
   >
-    <v-card-item>
+    <v-card-item class="card-item">
       <v-card-title class="title">{{ title }}</v-card-title>
       <v-img :src="img"></v-img>
     </v-card-item>
@@ -26,7 +23,9 @@ const props = defineProps({
 
 const elevation = ref(0);
 
-const { width, mobile } = useDisplay();
+const { width, height, mobile } = useDisplay();
+
+const color = ref("red");
 
 function addElevation() {
   elevation.value = 16;
@@ -36,16 +35,15 @@ function addElevation() {
 <style scoped>
 .title-card {
   background-color: #000000;
-  border-radius: 30px;
+  border-radius: 20px;
+  max-height: 66vh;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .title {
   display: flex;
+  font-size: 1.2rem;
   justify-content: center;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 </style>
