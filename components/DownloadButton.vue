@@ -15,6 +15,5 @@ const goToDownloadPage = () => {
 <style scoped>
 .container {
   margin-top: -20px;
-  margin-bottom: 100px;
 }
 </style>

@@ -35,14 +35,10 @@ function addElevation() {
 
 <style scoped>
 .title-card {
-  /* position: fixed; */
-  /* height: 60vh; */
-  /* display: flex; */
-  min-width: 245px;
+  min-width: 250px;
   background-color: #000000;
   border-radius: 20px;
-  /* max-height: 60vh; */
-  max-height: 530px;
+  max-height: 60vh;
   margin-left: 20px;
   margin-right: 20px;
   overflow: hidden;
@@ -54,7 +50,7 @@ function addElevation() {
 }
 
 .card-item {
-  max-height: 60vh;
+  max-height: 50vh;
 }
 
 .title {

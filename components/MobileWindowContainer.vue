@@ -26,11 +26,11 @@ const titles = [
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  min-height: 69vh;
+  min-height: 60vh;
 }
 
 .card {
-  height: 69vh;
+  height: 60vh;
 }
 
 .card-actions {
