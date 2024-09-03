@@ -2,7 +2,7 @@
   <v-card
     class="title-card"
     :elevation="elevation"
-    :min-width="mobile ? width - width / 3 : '300'"
+    :min-width="mobile ? width - width / 2.5 : '300'"
     @mouseover="addElevation()"
     @mouseleave="mobile ? null : (elevation = 0)"
   >
@@ -54,11 +54,17 @@ function addElevation() {
 
 .title {
   display: flex;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   justify-content: center;
 }
 
 .img {
   height: auto;
+}
+
+@media (max-width: 1280px) {
+  .title {
+    font-size: 0.8rem;
+  }
 }
 </style>
