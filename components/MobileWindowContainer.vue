@@ -29,6 +29,10 @@ const titles = [
   min-height: 69vh;
 }
 
+.card {
+  height: 69vh;
+}
+
 .card-actions {
   display: flex;
   justify-content: center;
