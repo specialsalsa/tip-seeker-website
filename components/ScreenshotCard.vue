@@ -2,7 +2,7 @@
   <v-card
     class="title-card"
     :elevation="elevation"
-    :min-width="mobile ? width - width / 5 : '400'"
+    :min-width="mobile ? width - width / 3 : '300'"
     @mouseover="addElevation()"
     @mouseleave="mobile ? null : (elevation = 0)"
   >
@@ -32,14 +32,14 @@ const elevation = ref(24);
 const { width, mobile } = useDisplay();
 
 function addElevation() {
-  elevation.value = 24;
+  elevation.value = 16;
 }
 </script>
 
 <style scoped>
 .title-card {
   /* position: fixed; */
-  height: 60vh;
+  /* height: 60vh; */
 
   background-color: #000000;
   border-radius: 20px;
@@ -48,9 +48,13 @@ function addElevation() {
   margin-right: 20px;
 }
 
+.card-item {
+  max-height: 60vh;
+}
+
 .title {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.9rem;
   justify-content: center;
 }
 
