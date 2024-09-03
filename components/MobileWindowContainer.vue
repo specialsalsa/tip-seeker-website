@@ -9,9 +9,9 @@
 <script setup>
 import addNew from "../public/add-new.png";
 import tipperLookup from "../public/tipper-lookup.png";
-import tipLog from "../public/tip-log.png";
+import details from "../public/details.png";
 
-const imgs = [tipperLookup, addNew, tipLog];
+const imgs = [tipperLookup, addNew, details];
 
 const titles = [
   "Check addresses for tip data",
@@ -26,7 +26,7 @@ const titles = [
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  min-height: 60vh;
+  min-height: 69vh;
 }
 
 .card-actions {

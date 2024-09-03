@@ -1,19 +1,16 @@
 <template>
-  <v-card
+  <div
     class="title-card"
-    :elevation="elevation"
-    :min-width="mobile ? width - width / 2.5 : '300'"
     @mouseover="addElevation()"
     @mouseleave="mobile ? null : (elevation = 0)"
   >
-    <v-card-item class="card-item">
-      <v-card-title class="title">{{ title }}</v-card-title>
-      <v-img :src="img" />
-    </v-card-item>
-  </v-card>
+    <h3 class="title">{{ title }}</h3>
+    <v-img :src="img" />
+  </div>
 </template>
 
 <script setup>
+// :min-width="mobile ? width / 3.5 : '400'"
 import { useDisplay } from "vuetify";
 
 defineProps({
@@ -40,12 +37,20 @@ function addElevation() {
 .title-card {
   /* position: fixed; */
   /* height: 60vh; */
-
+  /* display: flex; */
+  min-width: 245px;
   background-color: #000000;
   border-radius: 20px;
-  max-height: 60vh;
+  /* max-height: 60vh; */
+  max-height: 530px;
   margin-left: 20px;
   margin-right: 20px;
+  overflow: hidden;
+  border: 10px solid black;
+  /* padding: 10px 10px; */
+}
+
+.container {
 }
 
 .card-item {
@@ -54,12 +59,11 @@ function addElevation() {
 
 .title {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1rem;
   justify-content: center;
 }
 
 .img {
-  height: auto;
 }
 
 @media (max-width: 1280px) {
