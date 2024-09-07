@@ -24,7 +24,7 @@ const { width } = useDisplay();
 .sheet {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 </style>

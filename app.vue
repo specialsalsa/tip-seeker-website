@@ -10,7 +10,7 @@ await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
   <NuxtLayout>
     <v-app class="app">
       <AppHeader />
-      <DownloadButton />
+      <!-- <DownloadButton /> -->
       <MobileWindowContainer v-if="mobile" />
       <DesktopSheetContainer v-else />
     </v-app>
