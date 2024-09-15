@@ -1,5 +1,10 @@
 <template>
-  <v-window :class="`mx-auto my-8 d-flex `" elevation="0" show-arrows="true">
+  <v-window
+    :class="`mx-auto my-8 d-flex`"
+    elevation="0"
+    show-arrows="true"
+    style="height: 600px"
+  >
     <v-window-item v-for="n in 3" :key="`card_${n - 1}`" class="card">
       <ScreenshotCard :title="titles[n - 1]" :img="imgs[n - 1]" />
     </v-window-item>
@@ -10,6 +15,9 @@
 import addNew from "../public/add-new.png";
 import tipperLookup from "../public/tipper-lookup.png";
 import details from "../public/details.png";
+import { useDisplay } from "vuetify";
+
+const { height } = useDisplay();
 
 const imgs = [tipperLookup, addNew, details];
 
@@ -23,10 +31,6 @@ const titles = [
 <style scoped>
 .sheet {
   position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  min-height: 60vh;
 }
 
 .card {
