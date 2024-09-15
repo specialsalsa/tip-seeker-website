@@ -1,5 +1,5 @@
 <template>
-  <v-window class="sheet mx-auto my-8 d-flex" elevation="0" show-arrows="true">
+  <v-window :class="`mx-auto my-8 d-flex `" elevation="0" show-arrows="true">
     <v-window-item v-for="n in 3" :key="`card_${n - 1}`" class="card">
       <ScreenshotCard :title="titles[n - 1]" :img="imgs[n - 1]" />
     </v-window-item>

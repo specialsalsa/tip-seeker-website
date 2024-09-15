@@ -35,6 +35,10 @@ function addElevation() {
   transition: color 0.5s;
 }
 
+.title-card {
+  border-radius: 16px;
+}
+
 .title:hover {
   color: green;
 }

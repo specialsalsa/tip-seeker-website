@@ -1,6 +1,6 @@
 <template>
   <div
-    class="title-card"
+    class="title-card has-elevation"
     @mouseover="addElevation()"
     @mouseleave="mobile ? null : (elevation = 0)"
   >
@@ -46,7 +46,9 @@ function addElevation() {
   /* padding: 10px 10px; */
 }
 
-.container {
+.has-elevation {
+  box-shadow: 0 clamp(5px, 1vw, 25px) clamp(10px, 2vh, 50px) rgba(0, 0, 0, 0.35),
+    0 clamp(2px, 1vw, 20px) clamp(5px, 1vh, 15px) rgba(0, 0, 0, 0.25);
 }
 
 .card-item {
@@ -65,6 +67,21 @@ function addElevation() {
 @media (max-width: 1280px) {
   .title {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-height: 900px) {
+  .has-elevation {
+    /* Adjust the shadow to ensure visibility */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35),
+      /* Larger shadow for lower resolutions */ 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media (max-height: 700px) {
+  .has-elevation {
+    /* Ensure shadows stay small and visible at even smaller resolutions */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35), 0 8px 15px rgba(0, 0, 0, 0.25);
   }
 }
 </style>

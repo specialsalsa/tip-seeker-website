@@ -11,8 +11,12 @@ await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
     <v-app class="app">
       <AppHeader />
       <!-- <DownloadButton /> -->
-      <MobileWindowContainer v-if="mobile" />
-      <DesktopSheetContainer v-else />
+      <div class="container">
+        <SideCard title="About the app" v-if="!mobile" />
+        <MobileWindowContainer />
+        <SideCard title="About me" v-if="!mobile" />
+      </div>
+      <!-- <DesktopSheetContainer v-else /> -->
     </v-app>
   </NuxtLayout>
 </template>
@@ -20,5 +24,10 @@ await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
 <style scoped>
 .app {
   display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
 </style>
