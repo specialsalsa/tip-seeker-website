@@ -41,14 +41,23 @@ function addElevation() {
   max-height: 60vh;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   overflow: hidden;
   border: 10px solid black;
+  outline: 2px solid transparent;
+  transition: outline 0.3s ease-in-out;
+
   /* padding: 10px 10px; */
 }
 
 .has-elevation {
   box-shadow: 0 clamp(5px, 1vw, 25px) clamp(10px, 2vh, 50px) rgba(0, 0, 0, 0.35),
     0 clamp(2px, 1vw, 20px) clamp(5px, 1vh, 15px) rgba(0, 0, 0, 0.25);
+}
+
+.title-card:hover {
+  outline: 2px solid #b3e5ab;
 }
 
 .card-item {
