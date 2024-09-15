@@ -13,10 +13,11 @@ defineProps({
 
 <style scoped>
 .card {
-  width: 30rem;
+  min-width: 25rem;
+  width: 35%;
   height: 30rem;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 2rem;
+  margin-right: 2rem;
   margin-top: 50px;
 
   border-radius: 16px;

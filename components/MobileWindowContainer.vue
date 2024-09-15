@@ -1,6 +1,6 @@
 <template>
   <v-window
-    :class="`mx-auto my-8 d-flex`"
+    :class="`mx-auto my-8 d-flex sheet`"
     elevation="0"
     show-arrows="true"
     style="height: 600px"
@@ -30,7 +30,7 @@ const titles = [
 
 <style scoped>
 .sheet {
-  position: fixed;
+  height: 600px;
 }
 
 .card {

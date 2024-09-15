@@ -2,9 +2,8 @@
   <v-card
     class="mx-auto my-8 title-card"
     :elevation="elevation"
-    max-width="1500"
     max-height="800"
-    :width="width - 20"
+    :width="width - 55"
     @mouseover="addElevation()"
     @mouseleave="elevation = 0"
   >

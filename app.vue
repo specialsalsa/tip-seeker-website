@@ -12,9 +12,9 @@ await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
       <AppHeader />
       <!-- <DownloadButton /> -->
       <div class="container">
-        <SideCard title="About the app" v-if="!mobile" />
+        <SideCard v-if="!mobile" title="About the app" />
         <MobileWindowContainer />
-        <SideCard title="About me" v-if="!mobile" />
+        <SideCard v-if="!mobile" title="About me" />
       </div>
       <!-- <DesktopSheetContainer v-else /> -->
     </v-app>
@@ -29,5 +29,6 @@ await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
 .container {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
 }
 </style>

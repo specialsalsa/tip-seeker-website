@@ -61,9 +61,6 @@ function addElevation() {
   justify-content: center;
 }
 
-.img {
-}
-
 @media (max-width: 1280px) {
   .title {
     font-size: 0.8rem;
