@@ -1,22 +1,12 @@
-<script setup>
-import { useDisplay } from "vuetify";
-
-const { mobile } = useDisplay();
-
-await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
-</script>
+<script setup></script>
 
 <template>
   <NuxtLayout>
     <v-app class="app">
       <AppHeader />
-      <!-- <DownloadButton /> -->
-      <div class="container">
-        <SideCard v-if="!mobile" title="About the app" />
-        <MobileWindowContainer />
-        <SideCard v-if="!mobile" title="About me" />
-      </div>
-      <!-- <DesktopSheetContainer v-else /> -->
+      <QuestionText />
+      <AnswerText />
+      <DesktopSheetContainer />
     </v-app>
   </NuxtLayout>
 </template>
@@ -24,11 +14,5 @@ await preloadComponents(["ScreenshotCard", "MobileWindowContainer"]);
 <style scoped>
 .app {
   display: flex;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
 }
 </style>

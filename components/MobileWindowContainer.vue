@@ -2,7 +2,7 @@
   <v-window
     :class="`mx-auto my-8 d-flex sheet`"
     elevation="0"
-    show-arrows="true"
+    :show-arrows="true"
   >
     <v-window-item v-for="n in 3" :key="`card_${n - 1}`" class="card">
       <ScreenshotCard :title="titles[n - 1]" :img="imgs[n - 1]" />

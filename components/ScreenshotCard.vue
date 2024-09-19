@@ -1,11 +1,13 @@
 <template>
-  <div
-    class="title-card has-elevation"
-    @mouseover="addElevation()"
-    @mouseleave="mobile ? null : (elevation = 0)"
-  >
+  <div class="container">
     <h3 class="title">{{ title }}</h3>
-    <v-img :src="img" />
+    <div
+      class="title-card has-elevation"
+      @mouseover="addElevation()"
+      @mouseleave="mobile ? null : (elevation = 0)"
+    >
+      <v-img :src="img" />
+    </div>
   </div>
 </template>
 
@@ -57,7 +59,7 @@ function addElevation() {
 }
 
 .title-card:hover {
-  outline: 2px solid #b3e5ab;
+  outline: 2px solid var(--pastel-green);
 }
 
 .card-item {
@@ -68,6 +70,8 @@ function addElevation() {
   display: flex;
   font-size: 1rem;
   justify-content: center;
+  color: rgb(0, 207, 45);
+  margin-bottom: 3vh;
 }
 
 @media (max-width: 1280px) {

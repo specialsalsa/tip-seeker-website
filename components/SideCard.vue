@@ -26,7 +26,7 @@ defineProps({
   transition: border 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 .card:hover {
-  border: 2px solid #b3e5ab; /* Pastel green inner border when hovered */
-  box-shadow: inset 0 0 0 2px #b3e5ab; /* Create the inner border effect */
+  border: 2px solid var(--pastel-green); /* Pastel green inner border when hovered */
+  box-shadow: inset 0 0 0 2px var(--pastel-green); /* Create the inner border effect */
 }
 </style>
