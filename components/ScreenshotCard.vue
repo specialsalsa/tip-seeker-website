@@ -39,6 +39,7 @@ function addElevation() {
 
 <style scoped>
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +47,7 @@ function addElevation() {
 }
 
 .title-card {
+  margin-top: 30vh;
   min-width: 250px;
   background-color: #000000;
   border-radius: 20px;

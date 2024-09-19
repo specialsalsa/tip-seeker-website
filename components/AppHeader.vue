@@ -13,6 +13,7 @@ import tipSeekerLogo from "../public/Tip_Seeker_Logo.png";
 .header-container {
   display: flex;
   justify-content: flex-start;
+
   height: 5vh;
   background-color: black;
 }
