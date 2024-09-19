@@ -11,6 +11,9 @@
 <style scoped>
 .text {
   color: black;
+  /* margin-left: 5vw;
+  margin-right: 5vw; */
+  margin: 0 5vw;
 }
 
 .container {

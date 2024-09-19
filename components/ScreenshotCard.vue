@@ -85,7 +85,7 @@ function addElevation() {
   color: rgb(0, 207, 45);
   margin-bottom: 3vh;
   min-width: 15vw;
-  max-width: 30vw;
+  max-width: 40vw;
 }
 
 @media (max-width: 1280px) {
