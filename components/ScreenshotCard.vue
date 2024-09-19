@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <h3 class="title">{{ title }}</h3>
+    <h3 class="title">
+      {{ title }}
+    </h3>
     <div
       class="title-card has-elevation"
       @mouseover="addElevation()"
@@ -28,7 +30,7 @@ defineProps({
 
 const elevation = ref(24);
 
-const { width, mobile } = useDisplay();
+const { mobile } = useDisplay();
 
 function addElevation() {
   elevation.value = 16;
@@ -36,6 +38,13 @@ function addElevation() {
 </script>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title-card {
   min-width: 250px;
   background-color: #000000;
@@ -68,30 +77,29 @@ function addElevation() {
 
 .title {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.3rem;
   justify-content: center;
+  text-align: center;
   color: rgb(0, 207, 45);
   margin-bottom: 3vh;
   min-width: 15vw;
+  max-width: 15vw;
 }
 
 @media (max-width: 1280px) {
   .title {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-height: 900px) {
   .has-elevation {
-    /* Adjust the shadow to ensure visibility */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35),
-      /* Larger shadow for lower resolutions */ 0 10px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35), 0 10px 20px rgba(0, 0, 0, 0.25);
   }
 }
 
 @media (max-height: 700px) {
   .has-elevation {
-    /* Ensure shadows stay small and visible at even smaller resolutions */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35), 0 8px 15px rgba(0, 0, 0, 0.25);
   }
 }

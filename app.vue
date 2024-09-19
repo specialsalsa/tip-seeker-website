@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import { useDisplay } from "vuetify";
+
+const { mobile } = useDisplay();
+</script>
 
 <template>
   <NuxtLayout>
@@ -6,7 +10,8 @@
       <AppHeader />
       <QuestionText />
       <AnswerText />
-      <DesktopSheetContainer />
+      <DesktopSheetContainer v-if="!mobile" />
+      <MobileWindowContainer v-else />
     </v-app>
   </NuxtLayout>
 </template>

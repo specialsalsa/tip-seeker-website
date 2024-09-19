@@ -13,12 +13,12 @@
 <script setup>
 import addNew from "../public/add-new.png";
 import tipperLookup from "../public/tipper-lookup.png";
-import details from "../public/details.png";
+import tipLog from "../public/tip-log.png";
 import { useDisplay } from "vuetify";
 
 const { height } = useDisplay();
 
-const imgs = [tipperLookup, addNew, details];
+const imgs = [tipperLookup, addNew, tipLog];
 
 const titles = [
   "Check addresses for tip data",
@@ -29,11 +29,13 @@ const titles = [
 
 <style scoped>
 .sheet {
-  height: 600px;
+  /* position: relative; */
+  min-height: 600px;
 }
 
 .card {
-  height: 600px;
+  position: relative;
+  min-height: 600px;
 }
 
 .card-actions {
