@@ -72,6 +72,7 @@ function addElevation() {
   justify-content: center;
   color: rgb(0, 207, 45);
   margin-bottom: 3vh;
+  min-width: 15vw;
 }
 
 @media (max-width: 1280px) {
