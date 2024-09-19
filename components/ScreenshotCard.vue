@@ -44,6 +44,7 @@ function addElevation() {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5vh;
 }
 
 .title-card {
@@ -74,7 +75,7 @@ function addElevation() {
 }
 
 .card-item {
-  max-height: 50vh;
+  max-height: 60vh;
 }
 
 .title {
