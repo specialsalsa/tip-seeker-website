@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-    <img :src="tipSeekerLogo" />
+    <img id="logo" :src="tipSeekerLogo" />
     <h2>Tip Seeker</h2>
   </div>
 </template>
@@ -13,9 +13,14 @@ import tipSeekerLogo from "../public/Tip_Seeker_Logo.png";
 .header-container {
   display: flex;
   justify-content: flex-start;
+  width: 100%;
 
   height: 5vh;
   background-color: black;
+}
+
+#logo {
+  max-width: 120px;
 }
 
 h2 {
