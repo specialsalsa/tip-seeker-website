@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
     <img id="logo" :src="tipSeekerLogo" />
-    <h2>Tip Seeker</h2>
+    <h2 :style="{ 'font-size': '3.5rem' }">Tip Seeker</h2>
   </div>
 </template>
 
@@ -16,11 +16,13 @@ import tipSeekerLogo from "../public/Tip_Seeker_Logo.png";
   width: 100%;
 
   height: 5vh;
+  min-height: 120px;
   background-color: black;
 }
 
 #logo {
   max-width: 120px;
+  max-height: 120px;
 }
 
 h2 {
