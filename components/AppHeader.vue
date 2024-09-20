@@ -21,8 +21,8 @@ import tipSeekerLogo from "../public/Tip_Seeker_Logo.png";
 }
 
 #logo {
-  max-width: 120px;
-  max-height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 h2 {
