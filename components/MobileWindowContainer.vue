@@ -1,13 +1,24 @@
 <template>
-  <v-window
-    :class="`mx-auto my-8 d-flex sheet`"
-    elevation="0"
-    :show-arrows="true"
-  >
-    <v-window-item v-for="n in 3" :key="`card_${n - 1}`" class="card">
-      <ScreenshotCard :title="titles[n - 1]" :img="imgs[n - 1]" />
-    </v-window-item>
-  </v-window>
+  <div class="container">
+    <v-window
+      :class="`mx-auto my-8 d-flex sheet`"
+      elevation="0"
+      :show-arrows="true"
+    >
+      <v-window-item
+        transition="slide-x-reverse-transition"
+        reverse-transition="slide-x-transition"
+        mode="in-out"
+        duration="1"
+        eager
+        v-for="n in 3"
+        :key="`card_${n - 1}`"
+        class="card"
+      >
+        <ScreenshotCard :title="titles[n - 1]" :img="imgs[n - 1]" />
+      </v-window-item>
+    </v-window>
+  </div>
 </template>
 
 <script setup>
@@ -29,13 +40,19 @@ const titles = [
 
 <style scoped>
 .sheet {
-  /* position: relative; */
+  position: absolute;
   min-height: 600px;
 }
 
 .card {
   position: relative;
   min-height: 600px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .card-actions {
