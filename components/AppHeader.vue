@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
     <img id="logo" :src="tipSeekerLogo" />
-    <h2 :style="{ 'font-size': '3.5rem' }">Tip Seeker</h2>
+    <h2 :style="{ 'font-size': '2rem' }">Tip Seeker</h2>
   </div>
 </template>
 
