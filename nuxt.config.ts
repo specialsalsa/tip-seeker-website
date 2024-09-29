@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  hooks: {
+    "prerender:routes"({ routes }) {
+      routes.clear();
+    },
+  },
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["@/main.scss"],
