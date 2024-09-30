@@ -42,7 +42,7 @@ function addElevation() {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 5vh;
 }
@@ -79,12 +79,12 @@ function addElevation() {
 }
 
 .title {
-  display: flex;
+  /* display: flex; */
   font-size: 1.3rem;
   justify-content: center;
   text-align: center;
   color: rgb(0, 207, 45);
-  margin-bottom: 3vh;
+
   min-width: 15vw;
   max-width: 40vw;
 }

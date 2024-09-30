@@ -5,16 +5,7 @@
       elevation="0"
       :show-arrows="true"
     >
-      <v-window-item
-        transition="slide-x-reverse-transition"
-        reverse-transition="slide-x-transition"
-        mode="in-out"
-        duration="1"
-        eager
-        v-for="n in 3"
-        :key="`card_${n - 1}`"
-        class="card"
-      >
+      <v-window-item eager v-for="n in 3" :key="`card_${n - 1}`" class="card">
         <ScreenshotCard :title="titles[n - 1]" :img="imgs[n - 1]" />
       </v-window-item>
     </v-window>
@@ -25,16 +16,13 @@
 import addNew from "../public/add-new.png";
 import tipperLookup from "../public/tipper-lookup.png";
 import tipLog from "../public/tip-log.png";
-import { useDisplay } from "vuetify";
-
-const { height } = useDisplay();
 
 const imgs = [tipperLookup, addNew, tipLog];
 
 const titles = [
   "Check addresses for tip data",
-  "Record tips & notes",
-  "View recently logged trips",
+  "Record tips & notes         ",
+  "View recently logged trips  ",
 ];
 </script>
 
