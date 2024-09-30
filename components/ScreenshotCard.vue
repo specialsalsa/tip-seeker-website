@@ -37,7 +37,7 @@ function addElevation() {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   position: relative;
   display: flex;
@@ -86,7 +86,7 @@ function addElevation() {
   color: rgb(0, 207, 45);
 
   min-width: 15vw;
-  max-width: 40vw;
+  max-width: 60vw;
 }
 
 @media (max-width: 1280px) {

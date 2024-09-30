@@ -21,8 +21,8 @@ const imgs = [tipperLookup, addNew, tipLog];
 
 const titles = [
   "Check addresses for tip data",
-  "Record tips & notes         ",
-  "View recently logged trips  ",
+  "Record tips & notes",
+  "View recently logged trips",
 ];
 </script>
 
