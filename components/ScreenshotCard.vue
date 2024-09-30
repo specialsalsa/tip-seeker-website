@@ -56,7 +56,7 @@ function addElevation() {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: -20px;
   overflow: hidden;
   border: 10px solid black;
   outline: 2px solid transparent;
