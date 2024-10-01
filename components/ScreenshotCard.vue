@@ -87,6 +87,7 @@ function addElevation() {
 
   min-width: 15vw;
   max-width: 60vw;
+  min-height: 10vh;
 }
 
 @media (max-width: 1280px) {
