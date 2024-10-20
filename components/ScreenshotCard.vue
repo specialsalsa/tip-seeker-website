@@ -8,7 +8,7 @@
       @mouseover="addElevation()"
       @mouseleave="mobile ? null : (elevation = 0)"
     >
-      <v-img :src="img" />
+      <img :src="img" class="image" />
     </div>
   </div>
 </template>
@@ -47,9 +47,15 @@ function addElevation() {
   padding-bottom: 5vh;
 }
 
+.image {
+  width: 200px;
+  height: auto;
+}
+
 .title-card {
   margin-top: 30vh;
-  min-width: 250px;
+  min-width: 200px;
+  max-width: 250px;
   background-color: #000000;
   border-radius: 20px;
   max-height: 60vh;
