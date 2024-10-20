@@ -1,8 +1,10 @@
 <template>
   <div class="container">
-    <h3 class="title">
-      {{ title }}
-    </h3>
+    <div class="text-container">
+      <h3 class="title">
+        {{ title }}
+      </h3>
+    </div>
     <div
       class="title-card has-elevation"
       @mouseover="addElevation()"
@@ -50,6 +52,10 @@ function addElevation() {
 .image {
   width: 200px;
   height: auto;
+}
+
+.text-container {
+  margin: 0 80px;
 }
 
 .title-card {
